@@ -6,7 +6,7 @@ import Currencies from '../data/currencies';
 
 const TEMP_CURRENT_CURRENCY = 'CAD';
 
-class CurrencyList extends Component {
+export default class CurrencyList extends Component {
   handlePress = () => {
     console.log('row press');
   };
@@ -14,7 +14,7 @@ class CurrencyList extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <StatusBar barStyle="light-content" translucent={false} />
+        <StatusBar barStyle="default" translucent={false} />
         <FlatList
           data={Currencies}
           renderItem={({ item }) => (
@@ -31,4 +31,3 @@ class CurrencyList extends Component {
     );
   }
 }
-export default CurrencyList;

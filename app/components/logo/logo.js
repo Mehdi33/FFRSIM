@@ -7,7 +7,7 @@ import styles from './styles';
 
 const ANIMATION_DURATION = 250;
 
-class Logo extends React.Component {
+export default class Logo extends React.Component {
   static propTypes = {
     tintColor: PropTypes.string,
   };
@@ -93,5 +93,3 @@ class Logo extends React.Component {
     );
   }
 }
-
-export default Logo;
